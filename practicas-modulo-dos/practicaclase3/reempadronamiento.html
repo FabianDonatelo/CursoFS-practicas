@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormReempadronamiento</title>
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+    <header>
+        <h1> Formulario de Empadronamiento o Reempadronamiento</h1>
+        <h1> Tarifa Social Electrica</h1>
+        <h2>DATOS DEL SOLICITANTE O TITULAR DEL SERVICIO</h2>
+    </header>
+    <main>
+        <fieldset>
+            <legend>Datos del Solicitante</legend>
+            <label for="Apellido">Apellido</label> 
+            <input type="text" name="Apellido" id="Apellido"> <label for="Nombre">Nombre</label> <input type="text" name="Nombre" id="Nombre">
+            <label for="Nacimiento">Fecha de Nacimiento</label>
+            <input type="date" name="FechadeNacimiento" id="Nacimiento">
+            <label for="Nacionalidad">Nacionalidad</label>
+            <input type="text" name="Nacionalidad" id="Nacionalidad">
+             <label for="DNI">DNI</label>
+            <input type="number" name="DNI" id="DNI">
+            <label for="mail">Correo electr o mail</label>
+            <input type="email" name="mail" id="mail">
+
+        </fieldset>
+        <fieldset>
+            <legend> Datos Catastrales</legend>
+            <label for="servicio">Nro de Servicio</label>
+            <input type="number" name="servicio" id="servicio">
+
+            <label for="Calle">Calle</label>
+            <input type="text" name="Calle" id="Calle">
+
+            <label for="nro">Nro</label>
+            <input type="text" name="nro" id="nro">
+
+            <label for="Piso">Piso</label>
+            <input type="text" name="Piso" id="Piso">
+
+            <label for="Dpto">Dpto</label>
+            <input type="text" name="Dpto" id="Dpto">
+
+            <label for="Cp">Código Postal</label>
+            <input type="text" name="Cp" id="Cp">
+
+        </fieldset>
+
+        <hr>
+
+        <h1>DATOS DEL GRUPO FAMILIAR CONVIVIENTE</h1>
+        <h1>(INCLUYENDO EL TITULAR DEL SERVICIO)</h1>
+        <fieldset>
+            <legend>miembro del grupo familiar</legend>
+            <label for="apenom">Apellido y Nombre</label>
+            <input type="text" name="apenom" id="apenom">
+
+            <label for="cuil"></label>
+            <input type="number" name="cuil" id="cuil">
+
+            <label for="Nacimiento">Fecha de Nacimiento</label>
+            <input type="date" name="FechadeNacimiento" id="Nacimiento">
+
+            <label for="parentesco">Parentesco</label>
+            <input type="text" name="parentesco" id="parentesco">
+
+            <label for="Ocupacion">Ocupacion</label>
+            <input type="text" name="ocupacion" id="ocupacion">
+
+            <label for="ingreso">Ingreso Mensual $</label>
+            <input type="number" name="ingreso" id="ingreso">
+
+
+        </fieldset>
+        <h1>Ingresa otro miembro dedal grupo familiar?</h1>
+        <fieldset>
+        <legend>Si o No</legend>
+        <label for="si">Si</label>
+        <input type="radio" name="siono" id="si"   >
+        <label for="no">No</label>
+        <input type="radio" name="siono" id="no">
+        <!-- en caso afirmativo hay que habrir otro formulario??? como hago?? -->
+        </fieldset>
+        <p>CRITERIOS DE INCLUSIÓN:1) Ingreso total por mes del grupo conviviente en base a parámetros de vulnerabilidad social a definir por SUSEPU; 2) Ser Titular de Programas Sociales, estar inscripto en el Régimen de Monotributo Social, ser Empleado/a de Servicios Domésticos (Ley 26.844); ser desocupado y estar percibiendo el seguro de desempleo. 3) Ser Titular de una Pensión Vitalicia a Veteranos de Guerra del Atlántico Sur; 4) Titular o integrante del grupo conviviente con Discapacidad acreditada mediante certificación expedida por el Ministerio de Salud de la Provincia.
+            CRITERIOS DE EXCLUSIÓN:1) Que entre los miembros del grupo conviviente sean propietarios de más de un inmueble; 2) Que algún miembro del grupo conviviente sea propietario de un vehículo automotor cuyo modelo tenga hasta cinco (5) años de antigüedad. La SUSEPU podrá analizar casos especiales o excepcionales.</p>
+        <h2>DOCUMENTACION A PRESENTAR</h2>
+        <H3>¿EL SOLICITANTE ES TITULAR DEL SERVICIO?</H3>
+        
+        <select name="combo" id="combo">
+            <option value="Select">Select...</option>
+            <option value="Si">Si es Titular</option>
+            <option value="No">No es Titular</option>
+        </select>
+        <h3>Fotocopia de la última factura de energía emitida</h3>
+        <input type="file" name="ingrese la ultima factura emitida" id="factura">
+        
+        <h3>Es Pensionado?</h3>
+        <select name="combo" id="">
+            <option value="Select">Select...</option>
+            <option value="Si">Si soy Pensionado</option>
+            <option value="No">No soy Pensionado</option>
+        </select>
+
+        
+        
+
+    </main>
+    <footer></footer>
+
+</body>
+</html>
